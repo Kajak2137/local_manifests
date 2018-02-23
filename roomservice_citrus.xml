@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote  name="usoro"
+           fetch=".." />
+  <remote  name="omnirom"
+           fetch="Github.com/Omnirom" />
+
+  <!-- Xperia X--> 
+  <project name="Kajak2137/android_device_sony_suzu" path="device/sony/suzu" remote="usoro" revision="citrus-7.1" />
+  <project name="android_kernel_sony_msm8952" path="kernel/sony/msm8952" remote="omnirom" revision="android-7.1" />
+  <project name="TheMuppets/proprietary_vendor_sony" path="vendor/sony" remote="usoro" revision="cm-14.1" />
+
+  <!-- Common Xperia repos --> 
+  <project name="android_device_sony_common" path="device/sony/common" remote="omnirom" revision="android-7.1" />
+  <project name="android_device_sony_loire-common" path="device/sony/loire-common" remote="omnirom" revision="android-7.1" />
+  <project name="android_device_sony_common-headers" path="device/sony/common-headers" remote="omnirom" revision="android-7.1" />
+  <project name="android_device_sony_common-init" path="device/sony/common-init" remote="omnirom" revision="android-7.1" />
+  <project name="android_device_sony_sepolicy" path="device/sony/sepolicy" remote="omnirom" revision="android-7.1" />
+  <project name="android_hardware_sony_camera" path="hardware/sony/camera" remote="omnirom" revision="android-7.1" />
+  <project name="android_hardware_sony_dataservices" path="hardware/sony/dataservices" remote="omnirom" revision="android-7.1" />
+  <project name="android_hardware_sony_location" path="hardware/sony/location" remote="omnirom" revision="android-7.1" />
+  <project name="android_hardware_sony_fingerprint" path="hardware/sony/fingerprint" remote="omnirom" revision="android-7.1" />
+  <project name="android_hardware_sony_thermanager" path="hardware/sony/thermanager" remote="omnirom" revision="android-7.1" />
+  <project name="android_hardware_sony_timekeep" path="hardware/sony/timekeep" remote="omnirom" revision="android-7.1" />
+  <project name="android_hardware_sony_macaddrsetup" path="hardware/sony/macaddrsetup" remote="omnirom" revision="android-7.1" />
+  <project name="android_packages_apps_ExtendedSettings" path="packages/apps/ExtendedSettings" remote="omnirom" revision="android-7.1" />
+  <project name="android_hardware_qcom_display-caf-msm8952" path="hardware/qcom/display-caf-msm8952" remote="omnirom" revision="android-7.1" />
+  <project name="android_hardware_qcom_media-caf-msm8952" path="hardware/qcom/media-caf-msm8952" remote="omnirom" revision="android-7.1" />
+  <project name="android_hardware_qcom_audio-caf-msm8952" path="hardware/qcom/audio-caf-msm8952" remote="omnirom" revision="android-7.1" />
+
+  <!-- Usoro -->
+  <remove-project name="packages_apps_Settings" />
+  <remove-project name="frameworks_base" />
+  <project name="Kajak2137/packages_apps_Settings" path="packages/apps/Settings" remote="usoro" revision="n7x" />
+  <project name="Kajak2137/frameworks_base" path="frameworks/base" remote="usoro" revision="android-7.1" />
+</manifest>
